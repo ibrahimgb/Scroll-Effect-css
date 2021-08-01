@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*-----*/
+    scroll-snap-align: start;
+}
+
+.one{
+    color: white;
+    background-color: aqua;
+}
+.tow{
+    color: white;
+    background-color: brown;
+}
+.three{
+    color: white;
+    background-color: rgb(165, 83, 103);
+}
+.four{
+    color: white;
+    background-color: rgb(74, 109, 109);
+
+}
+.container{
+    /*---mandatory---*/
+    scroll-snap-type: y proximity;
+    overflow-y:scroll;
+    height: 100vh;
+}
+
